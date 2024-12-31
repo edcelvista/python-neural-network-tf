@@ -1,0 +1,5 @@
+.env
+_data/
+_models/
+_staging/
+venv/
