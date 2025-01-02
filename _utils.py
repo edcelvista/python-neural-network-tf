@@ -13,7 +13,7 @@ def printFlush(text):
     sys.stdout.write(f"\r{text}")
     sys.stdout.flush()
 
-def cleanUp(file_paths):
+def cleanUp(file_paths, progress_bar=False):
     # List of file paths to check and delete
     pctr       = 0
     for file_path in file_paths:
@@ -26,7 +26,8 @@ def cleanUp(file_paths):
 
         pctr+=1
 
-    print_progress_bar("Cleaning logs & files.", pctr, len(file_paths))
+    if progress_bar:
+        print_progress_bar("Cleaning logs & files.", pctr, len(file_paths))
 
 def ask_yes_or_no(question):
     while True:
