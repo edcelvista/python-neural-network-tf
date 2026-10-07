@@ -1,21 +1,21 @@
 # Neural Network (TensorFlow) - Sentiment Analysis
-## High-Level Landscape
+## 🤖 High-Level Landscape
 ![alt text](high-level.webp)
 
-## Data Input & Output Data Types
+## ⚡️ Data Input & Output Data Types
 ![alt text](image.png)
 
-## Model Building Process Flow
+## ⚙️ Model Building Process Flow
 ### Input (Data Processing) -> Processing (Training) -> Output (Prediction/Inference)
 ![alt text](image-2.png)
 
-## Text Data Input Transformation
+## ⚙️ Text Data Input Transformation
 ### Tokenization (Split Words > Convert into unique numeric value)
 ![alt text](image-3.png)
 ### Embedding (Creates Word Semantic Relation based on weights)
 ![alt text](image-1.png)
 
-## Neural Network Types
+## 📦 Neural Network Types
 ![alt text](image-4.png)
 
 ### Simple Neural Network
@@ -62,7 +62,7 @@ lstm_model.add(Dense(1, activation='sigmoid'))
 
 References: [Guide1](https://medium.com/@email2sukrit/finer-grain-sentiment-analyzer-a-tensorflow-keras-project-1e1cce86d9d7), [Guide2](https://drlee.io/build-an-nlp-model-for-sentiment-analysis-using-tensorflow-in-10-minutes-a6d3de84b17f), [Guide3](https://medium.com/@kwasiasomani85/movie-review-sentimental-classification-with-recurrent-neural-network-in-tensorflow-3c0ce1c1fea6), [Tokenizers](https://huggingface.co/docs/transformers/en/fast_tokenizers)
 
-## Customization
+## 🤖 Customization
 ### Custom Embedding Layer
 ```
 # Load GloVe word embeddings and create an Embeddings Dictionary
